@@ -78,7 +78,7 @@ function showCartList (){
     for(item of scriptCart){
 
         const listItem = document.createElement("li")
-        listItem.innerHTML = "Produkt: "+item.productName +" Pris: "+ item.price +" Antal: "+ item.quantity
+        listItem.textContent = `Produkt: ${item.productName} - ${item.price} (x${item.quantity})`
         cartList.appendChild(listItem)
 
     }
